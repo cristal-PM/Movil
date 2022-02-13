@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res-auto"
+    xmlns:android2="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android2:layout_width="match_parent"
+    android2:layout_height="wrap_content"
+    android2:animateLayoutChanges="true"
+    cardCornerRadius="20dp"
+    cardElevation="40dp"
+    cardUseCompatPadding="true"
+    android2:id="@+id/cv"
+    tools:ignore="NamespaceTypo" >
+
+    <LinearLayout
+        android2:layout_width="match_parent"
+        android2:layout_height="wrap_content"
+        android2:orientation="vertical"
+        android2:animateLayoutChanges="true">
+
+        <RelativeLayout
+            android2:layout_width="match_parent"
+            android2:layout_height="match_parent"
+            android2:layout_marginRight="2dp"
+            android2:orientation="horizontal"
+            android2:padding="6dp">
+
+
+            <TextView
+                android2:id="@+id/textView4"
+                android2:layout_width="wrap_content"
+                android2:layout_height="wrap_content"
+                android2:layout_alignParentEnd="true"
+                android2:layout_alignParentRight="true"
+                android2:layout_centerVertical="true"
+                android2:layout_marginEnd="4dp"
+                android2:text="Conectado"
+                android2:textSize="20sp" />
+
+            <ImageView
+                android2:id="@+id/img"
+                android2:layout_width="70dp"
+                android2:layout_height="70dp"
+                android2:layout_alignParentStart="true"
+                android2:layout_alignParentLeft="true"
+                android2:layout_centerVertical="true"
+                android2:layout_gravity="center"
+                android2:paddingLeft="14dp"
+                android2:paddingRight="14dp"
+                android2:src="@drawable/ic_contact_mail_black_24dp"></ImageView>
+
+            <LinearLayout
+                android2:layout_width="wrap_content"
+                android2:layout_height="wrap_content"
+                android2:layout_alignParentTop="true"
+                android2:layout_marginStart="4dp"
+                android2:layout_marginLeft="4dp"
+                android2:layout_marginTop="2dp"
+                android2:layout_toEndOf="@+id/img"
+                android2:layout_toRightOf="@id/img"
+                android2:orientation="vertical">
+
+
+                <TextView
+                    android2:id="@+id/textView2"
+                    android2:layout_width="wrap_content"
+                    android2:layout_height="wrap_content"
+                    android2:layout_marginBottom="4dp"
+                    android2:text="Karla"
+                    android2:textSize="24sp"
+                    android2:textStyle="bold" />
+
+                <TextView
+                    android2:id="@+id/city"
+                    android2:layout_width="match_parent"
+                    android2:layout_height="wrap_content"
+                    android2:text="Durango"
+                    android2:textSize="14sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
